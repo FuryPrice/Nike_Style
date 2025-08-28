@@ -1,0 +1,136 @@
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #ccc;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #ff4081; }
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      background: linear-gradient(45deg, #ff4081, #ffea00);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 60px;
+    }
+    .hero-text {
+      max-width: 500px;
+    }
+    .hero-text h1 {
+      font-size: 60px;
+      background: linear-gradient(90deg, #ffea00, #ff4081, #8e44ad);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .hero-text p {
+      color: #bbb;
+      margin: 20px 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin-right: 10px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn-primary {
+      background: linear-gradient(45deg, #ff4081, #ffea00);
+      color: #000;
+    }
+    .btn-primary:hover { transform: translateY(-3px); }
+    .btn-outline {
+      border: 1px solid #555;
+      color: #fff;
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.1); }
+    .hero img {
+      max-width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255,64,129,0.5);
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 60px;
+      gap: 20px;
+    }
+    .feature {
+      background: #111;
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 300px;
+      transition: 0.3s;
+    }
+    .feature:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    }
+    /* Поддержка */
+    .support {
+      background: #111;
+      padding: 40px 60px;
+      text-align: center;
+    }
+    .support h2 {
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #ffea00, #ff4081);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .support form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .support input, .support textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      background: #222;
+      color: #fff;
+    }
+    .support button {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(45deg, #ff4081, #ffea00);
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .support button:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: #777;
+    }

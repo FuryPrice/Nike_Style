@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Style Landing</title>
+  <link rel="stylesheet" href="nike.css">
+</head>
+<body>
+  <header>
+    <div class="logo">NIKE STYLE</div>
+    <nav>
+      <a href="#">New</a>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">Kids</a>
+      <a href="#">Sale</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Revolution X</h1>
+      <p>Лёгкая, прочная и адаптивная — кроссовки, которые движутся вместе с вами. Экологичные материалы и смелый дизайн.</p>
+      <a href="#" class="btn btn-primary">Купить сейчас</a>
+      <a href="#" class="btn btn-outline">Подробнее</a>
+    </div>
+    <img src="ChatGPT Image 28 авг. 2025 г., 09_35_37.png" alt="Sneakers">
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Амортизация</h3>
+      <p>Новая подошва даёт мягкость и отзывчивость — идеально для бега и повседневной жизни.</p>
+    </div>
+    <div class="feature">
+      <h3>Экологичные материалы</h3>
+      <p>Верх из переработанных волокон уменьшает воздействие на природу.</p>
+    </div>
+    <div class="feature">
+      <h3>Адаптивная посадка</h3>
+      <p>Конструкция обхватывает стопу и сохраняет комфорт на длинных дистанциях.</p>
+    </div>
+  </section>
+
+  <!-- Поддержка -->
+  <section class="support">
+    <h2>Связаться с поддержкой</h2>
+    <form id="supportForm">
+      <input type="text" id="name" placeholder="Ваше имя" required>
+      <input type="email" id="email" placeholder="Ваш email" required>
+      <textarea id="message" rows="4" placeholder="Ваше сообщение" required></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+    <p id="response" style="margin-top:15px;color:lightgreen;display:none;">✅ Спасибо! Ваше сообщение отправлено.</p>
+  </section>
+
+  <footer>
+    © 2025 Nike Style Demo — Inspired by Nike.
+  </footer>
+
+  <script>
+    const form = document.getElementById('supportForm');
+    const response = document.getElementById('response');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (name === '' || email === '' || message === '') {
+        alert('❌ Пожалуйста, заполните все поля.');
+        return;
+      }
+
+      // имитация отправки
+      response.style.display = 'block';
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
